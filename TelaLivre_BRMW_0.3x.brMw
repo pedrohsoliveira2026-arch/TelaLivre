@@ -1,0 +1,559 @@
+{
+  "format": "BRMW-0.3.x-compatible-attempt",
+  "version": "0.3.x",
+  "modelType": "conceptual",
+  "name": "TelaLivre - Modelo Conceitual",
+  "description": "Modelo conceitual TelaLivre preparado para teste de importação na série BRMW 0.3.x.",
+  "nodes": [
+    {
+      "id": "entity_eac0df7f",
+      "type": "entity",
+      "name": "PESSOA",
+      "attributes": [
+        {
+          "id": "attr_c84a8f5e",
+          "name": "CPF",
+          "identifier": true
+        },
+        {
+          "id": "attr_0a90697e",
+          "name": "nome",
+          "identifier": false
+        },
+        {
+          "id": "attr_c0424251",
+          "name": "endereço",
+          "identifier": false
+        },
+        {
+          "id": "attr_64a73498",
+          "name": "cidade",
+          "identifier": false
+        },
+        {
+          "id": "attr_05106e4a",
+          "name": "número",
+          "identifier": false
+        },
+        {
+          "id": "attr_96cea2de",
+          "name": "rua",
+          "identifier": false
+        },
+        {
+          "id": "attr_f4afdfa6",
+          "name": "telefone",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 80,
+        "y": 80
+      }
+    },
+    {
+      "id": "entity_ff227739",
+      "type": "entity",
+      "name": "USUÁRIO",
+      "attributes": [
+        {
+          "id": "attr_c839d579",
+          "name": "id_usuario",
+          "identifier": true
+        },
+        {
+          "id": "attr_3e51e5c6",
+          "name": "email",
+          "identifier": false
+        },
+        {
+          "id": "attr_df745ebd",
+          "name": "senha",
+          "identifier": false
+        },
+        {
+          "id": "attr_b6e0efdd",
+          "name": "data_cadastro",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 460,
+        "y": 80
+      }
+    },
+    {
+      "id": "entity_c937adfe",
+      "type": "entity",
+      "name": "FUNCIONÁRIO",
+      "attributes": [
+        {
+          "id": "attr_8669f2ee",
+          "name": "id_funcionario",
+          "identifier": true
+        },
+        {
+          "id": "attr_71d46db6",
+          "name": "data_contratacao",
+          "identifier": false
+        },
+        {
+          "id": "attr_14b224e6",
+          "name": "acesso",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 840,
+        "y": 80
+      }
+    },
+    {
+      "id": "entity_d16a6a70",
+      "type": "entity",
+      "name": "CARGO",
+      "attributes": [
+        {
+          "id": "attr_54be2e70",
+          "name": "id_cargo",
+          "identifier": true
+        },
+        {
+          "id": "attr_e6721ccd",
+          "name": "nome",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 1220,
+        "y": 80
+      }
+    },
+    {
+      "id": "entity_b637eb80",
+      "type": "entity",
+      "name": "PLANO",
+      "attributes": [
+        {
+          "id": "attr_086f6c79",
+          "name": "id_plano",
+          "identifier": true
+        },
+        {
+          "id": "attr_803dd0d8",
+          "name": "nome",
+          "identifier": false
+        },
+        {
+          "id": "attr_3595a511",
+          "name": "descrição",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 80,
+        "y": 380
+      }
+    },
+    {
+      "id": "entity_9399b132",
+      "type": "entity",
+      "name": "ASSINATURA",
+      "attributes": [
+        {
+          "id": "attr_b89c9631",
+          "name": "id_assinatura",
+          "identifier": true
+        },
+        {
+          "id": "attr_de6e8174",
+          "name": "valor",
+          "identifier": false
+        },
+        {
+          "id": "attr_7beacb71",
+          "name": "data_inicio",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 460,
+        "y": 380
+      }
+    },
+    {
+      "id": "entity_d25e1c84",
+      "type": "entity",
+      "name": "CONTEÚDO",
+      "attributes": [
+        {
+          "id": "attr_fb7713c5",
+          "name": "id_conteudo",
+          "identifier": true
+        },
+        {
+          "id": "attr_789f7b94",
+          "name": "nome",
+          "identifier": false
+        },
+        {
+          "id": "attr_45193758",
+          "name": "gênero",
+          "identifier": false
+        },
+        {
+          "id": "attr_e4e99a7f",
+          "name": "ano",
+          "identifier": false
+        },
+        {
+          "id": "attr_f3324e1e",
+          "name": "descrição",
+          "identifier": false
+        },
+        {
+          "id": "attr_fcfd7d32",
+          "name": "classificação_indicativa",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 840,
+        "y": 380
+      }
+    },
+    {
+      "id": "entity_2e438f17",
+      "type": "entity",
+      "name": "FILME",
+      "attributes": [
+        {
+          "id": "attr_06a49272",
+          "name": "id_filme",
+          "identifier": true
+        }
+      ],
+      "position": {
+        "x": 1220,
+        "y": 380
+      }
+    },
+    {
+      "id": "entity_49ed5263",
+      "type": "entity",
+      "name": "SÉRIE",
+      "attributes": [
+        {
+          "id": "attr_abbbc383",
+          "name": "id_serie",
+          "identifier": true
+        }
+      ],
+      "position": {
+        "x": 80,
+        "y": 680
+      }
+    },
+    {
+      "id": "entity_27192292",
+      "type": "entity",
+      "name": "EPISÓDIO",
+      "attributes": [
+        {
+          "id": "attr_92f3c86e",
+          "name": "id_episodio",
+          "identifier": true
+        },
+        {
+          "id": "attr_bf4860f2",
+          "name": "nome",
+          "identifier": false
+        },
+        {
+          "id": "attr_4a78a57f",
+          "name": "número",
+          "identifier": false
+        },
+        {
+          "id": "attr_8da9ca34",
+          "name": "temporada",
+          "identifier": false
+        },
+        {
+          "id": "attr_daf1d43d",
+          "name": "duração",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 460,
+        "y": 680
+      }
+    },
+    {
+      "id": "entity_3b90e354",
+      "type": "entity",
+      "name": "HISTÓRICO",
+      "attributes": [
+        {
+          "id": "attr_8c1356fc",
+          "name": "id_historico",
+          "identifier": true
+        },
+        {
+          "id": "attr_644cae41",
+          "name": "data",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 840,
+        "y": 680
+      }
+    },
+    {
+      "id": "entity_23bff506",
+      "type": "entity",
+      "name": "AVALIAÇÃO",
+      "attributes": [
+        {
+          "id": "attr_980938c8",
+          "name": "id_avaliacao",
+          "identifier": true
+        },
+        {
+          "id": "attr_17962691",
+          "name": "nota",
+          "identifier": false
+        },
+        {
+          "id": "attr_ec0ac49a",
+          "name": "descrição",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 1220,
+        "y": 680
+      }
+    },
+    {
+      "id": "entity_1a5341d2",
+      "type": "entity",
+      "name": "COMPRA",
+      "attributes": [
+        {
+          "id": "attr_c56e353f",
+          "name": "id_compra",
+          "identifier": true
+        },
+        {
+          "id": "attr_70364752",
+          "name": "data",
+          "identifier": false
+        },
+        {
+          "id": "attr_f9068c8e",
+          "name": "valor",
+          "identifier": false
+        },
+        {
+          "id": "attr_afb13b09",
+          "name": "status",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 80,
+        "y": 980
+      }
+    },
+    {
+      "id": "entity_212a1e5e",
+      "type": "entity",
+      "name": "ALUGUEL",
+      "attributes": [
+        {
+          "id": "attr_e8f9a91f",
+          "name": "id_aluguel",
+          "identifier": true
+        },
+        {
+          "id": "attr_30c15fd2",
+          "name": "data",
+          "identifier": false
+        },
+        {
+          "id": "attr_2b71a067",
+          "name": "valor",
+          "identifier": false
+        },
+        {
+          "id": "attr_ac886a6e",
+          "name": "status",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 460,
+        "y": 980
+      }
+    },
+    {
+      "id": "entity_ae73a3e2",
+      "type": "entity",
+      "name": "PAGAMENTO",
+      "attributes": [
+        {
+          "id": "attr_117ddf62",
+          "name": "id_pagamento",
+          "identifier": true
+        },
+        {
+          "id": "attr_23570815",
+          "name": "data",
+          "identifier": false
+        },
+        {
+          "id": "attr_3ad16f84",
+          "name": "valor",
+          "identifier": false
+        },
+        {
+          "id": "attr_e79f75a2",
+          "name": "status",
+          "identifier": false
+        }
+      ],
+      "position": {
+        "x": 840,
+        "y": 980
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel_e26e155b",
+      "type": "relationship",
+      "name": "TEM",
+      "from": "entity_c937adfe",
+      "to": "entity_d16a6a70",
+      "cardinality": "N:N"
+    },
+    {
+      "id": "rel_90b1302c",
+      "type": "relationship",
+      "name": "REALIZA",
+      "from": "entity_ff227739",
+      "to": "entity_9399b132",
+      "cardinality": "0:N / 1:1"
+    },
+    {
+      "id": "rel_9df34b95",
+      "type": "relationship",
+      "name": "POSSUI",
+      "from": "entity_b637eb80",
+      "to": "entity_9399b132",
+      "cardinality": "0:N / 1:1"
+    },
+    {
+      "id": "rel_f887dcf0",
+      "type": "relationship",
+      "name": "POSSUI",
+      "from": "entity_49ed5263",
+      "to": "entity_27192292",
+      "cardinality": "1:N / 1:1"
+    },
+    {
+      "id": "rel_ed2eff03",
+      "type": "relationship",
+      "name": "REGISTRA",
+      "from": "entity_ff227739",
+      "to": "entity_3b90e354",
+      "cardinality": "0:N / 1:1"
+    },
+    {
+      "id": "rel_c85f9de6",
+      "type": "relationship",
+      "name": "FAZ",
+      "from": "entity_ff227739",
+      "to": "entity_23bff506",
+      "cardinality": "0:N / 1:1"
+    },
+    {
+      "id": "rel_29c7e036",
+      "type": "relationship",
+      "name": "REALIZA",
+      "from": "entity_ff227739",
+      "to": "entity_1a5341d2",
+      "cardinality": "0:N / 1:1"
+    },
+    {
+      "id": "rel_dabf3c5c",
+      "type": "relationship",
+      "name": "REALIZA",
+      "from": "entity_ff227739",
+      "to": "entity_212a1e5e",
+      "cardinality": "0:N / 1:1"
+    },
+    {
+      "id": "rel_751ee8ce",
+      "type": "relationship",
+      "name": "APARECE EM",
+      "from": "entity_d25e1c84",
+      "to": "entity_3b90e354",
+      "cardinality": "0:N / 1:1"
+    },
+    {
+      "id": "rel_82e35329",
+      "type": "relationship",
+      "name": "RECEBE",
+      "from": "entity_d25e1c84",
+      "to": "entity_23bff506",
+      "cardinality": "0:N / 1:1"
+    },
+    {
+      "id": "rel_ce2deece",
+      "type": "relationship",
+      "name": "É COMPRADO",
+      "from": "entity_d25e1c84",
+      "to": "entity_1a5341d2",
+      "cardinality": "0:N / 1:1"
+    },
+    {
+      "id": "rel_db3ddfd6",
+      "type": "relationship",
+      "name": "É ALUGADO",
+      "from": "entity_d25e1c84",
+      "to": "entity_212a1e5e",
+      "cardinality": "0:N / 1:1"
+    }
+  ],
+  "generalizations": [
+    {
+      "id": "isa_f1b94e16",
+      "type": "ISA",
+      "supertype": "entity_eac0df7f",
+      "subtypes": [
+        "entity_ff227739",
+        "entity_c937adfe"
+      ],
+      "constraint": "total_disjoint"
+    },
+    {
+      "id": "isa_1d0c43a0",
+      "type": "ISA",
+      "supertype": "entity_d25e1c84",
+      "subtypes": [
+        "entity_2e438f17",
+        "entity_49ed5263"
+      ],
+      "constraint": "total_disjoint"
+    }
+  ],
+  "notes": [
+    "A entidade EPISÓDIO foi criada separadamente; não existe atributo 'episódios' em SÉRIE.",
+    "CONTEÚDO é uma solução de modelagem inferida para permitir que compra, aluguel, avaliação e histórico identifiquem filme ou série.",
+    "As cardinalidades devem ser conferidas na versão BRMW 0.3.x após a importação."
+  ]
+}
